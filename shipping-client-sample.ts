@@ -1,3 +1,5 @@
+// Trigger API Guardian CI validation.
+
 export async function getShipmentTracking(
   baseUrl: string,
   shipmentId: string
@@ -10,6 +12,6 @@ export async function getShipmentTracking(
 
   return {
     id: tracking.shipment_id,
-    deliveryDate: tracking.estimated_delivery
+    deliveryDate: tracking.delivery_date
   };
 }

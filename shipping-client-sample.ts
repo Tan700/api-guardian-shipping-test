@@ -10,6 +10,6 @@ export async function getShipmentTracking(
 
   return {
     id: tracking.shipment_id,
-    deliveryDate: tracking.estimated_delivery
+    deliveryDate: tracking.delivery_date
   };
 }
